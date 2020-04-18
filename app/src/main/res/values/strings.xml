@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BabyNeeds</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_item">Add Item</string>
+    <string name="enter_item">Enter Item</string>
+    <string name="item_qty">Enter Qty</string>
+    <string name="item_color">Enter Color</string>
+    <string name="item_size">Enter size</string>
+    <string name="item_save">SAVE</string>
+    <string name="enter_item_view">Add New Item</string>
+</resources>

@@ -84,8 +84,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 Constants.KEY_ID,
                 Constants.KEY_ITEM_NAME, Constants.KEY_ITEM_QTY,
                 Constants.KEY_ITEM_COLOR, Constants.KEY_ITEM_SIZE,
-                Constants.KEY_ITEM_DATE}, String.valueOf(new String[]{
-                Constants.KEY_ID + "=?", String.valueOf(id)}),
+                Constants.KEY_ITEM_DATE},
+                Constants.KEY_ID + "=?", new String[]{String.valueOf(id)},
                 null, null, null, null);
 
 
@@ -98,6 +98,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
           item.setId(cursor.getInt(cursor.getColumnIndex(Constants.KEY_ID)));
           item.setItemName(cursor.getString(cursor.getColumnIndex(Constants.KEY_ITEM_NAME)));
           item.setItemQty(cursor.getInt(cursor.getColumnIndex(Constants.KEY_ITEM_QTY)));
+          item.setItemSize(cursor.getInt(cursor.getColumnIndex(Constants.KEY_ITEM_SIZE)));
           item.setItemColor(cursor.getString(cursor.getColumnIndex(Constants.KEY_ITEM_COLOR)));
 
           //Format Date

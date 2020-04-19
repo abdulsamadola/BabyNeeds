@@ -8,4 +8,7 @@
     <string name="item_size">Enter size</string>
     <string name="item_save">SAVE</string>
     <string name="enter_item_view">Add New Item</string>
+    <string name="delete_confirmation">Are you sure want to delete</string>
+    <string name="confirm_yes">Yes</string>
+    <string name="confirm_no">no</string>
 </resources>
